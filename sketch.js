@@ -8,6 +8,7 @@ var pig1,pig2;
 var log1,log2,log3,log4;
 var bird;
 var bg;
+var platform;
 
 function preload(){
 
@@ -26,6 +27,7 @@ function setup(){
     pig1 = new Pig(810,380,50,50);
     log1 = new Log(810,310,300,PI/2);
     ground = new Ground(600,height,1200,50);
+    platform = new Ground(150,300,300,150);
     box3 = new Box(700,280,70,70);
     box4 = new Box(920,280,70,70);
     box5 = new Box(810,180,70,70);
@@ -57,4 +59,5 @@ function draw(){
     log3.display();
     log4.display();
     bird.display();
+    platform.display();
 }
